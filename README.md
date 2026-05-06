@@ -1,4 +1,4 @@
-# Genomic Biomarkers and Co-Resistance Patterns of Carbapenem Resistance in Klebsiella pneumoniae
+# Genomic Biomarkers and Co-Resistance Patterns of Carbapenem Resistance in *Klebsiella pneumoniae*
 
 ## Project Overview
 
@@ -13,6 +13,7 @@ The study aimed to identify candidate genomic features associated with meropenem
 Carbapenem-resistant *K. pneumoniae* is a major global health threat. Understanding how genomic features relate to resistance is important for improving surveillance, diagnostics, and treatment strategies.
 
 This project goes beyond simple gene detection by:
+
 - performing statistical association analysis  
 - exploring co-resistance patterns  
 - investigating biologically meaningful exception cases  
@@ -57,23 +58,8 @@ A hybrid acquisition approach was used due to dataset size and platform constrai
 
 - AMR gene annotations were downloaded separately and processed in R due to file size and formatting constraints.
 
-All raw input files should be placed in:
-data/raw/
-
-
-Required files:
-
-- genome.csv  
-- phenotype.csv  
-- amr_genes.csv  
-
-AMR gene annotations were further cleaned and standardized using:
-
-
-scripts/02_clean_amr_genes.R
-
-
-Note: Exact dataset composition may vary slightly depending on database updates.
+Raw files are not included in this repository due to size and database access constraints.  
+See `data/raw/README.md` for details.
 
 ---
 
@@ -142,18 +128,12 @@ Approximately **22% of isolates showed genotype–phenotype mismatches**, indica
 ## Repository Structure
 
 
-crkp_genomic_biomarkers/
-
-├── data/
-
-├── scripts/
-
-├── results/
-
-├── plots/
-
-├── report/
-
+crkp_genomic_biomarkers/\
+├── data/\
+├── scripts/\
+├── results/\
+├── plots/\
+├── report/\
 └── README.md
 
 
@@ -163,24 +143,15 @@ crkp_genomic_biomarkers/
 
 Run the analysis in R by executing scripts sequentially from the `scripts/` folder:
 
-01_clean_metadata_and_phenotype.R
 
-02_clean_amr_genes.R
-
-03_define_final_cohort.R
-
-04_gene_matrix.R
-
-05_add_marker_columns.R
-
-06_dataset_summary.R
-
-07_single_gene_association.R
-
-08_carbapenemase_marker_analysis.R
-
-09_co_resistance_analysis.R
-
-10_exception_analysis.R
-
+01_clean_metadata_and_phenotype.R\
+02_clean_amr_genes.R\
+03_define_final_cohort.R\
+04_gene_matrix.R\
+05_add_marker_columns.R\
+06_dataset_summary.R\
+07_single_gene_association.R\
+08_carbapenemase_marker_analysis.R\
+09_co_resistance_analysis.R\
+10_exception_analysis.R\
 11_exception_deep_dive.R

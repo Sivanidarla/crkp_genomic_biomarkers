@@ -1,0 +1,11 @@
+phenotype,marker,count_present,total,frequency
+Resistant,blaIMP_any,3,786,0.003816793893129771
+Resistant,blaKPC_any,680,786,0.8651399491094147
+Resistant,blaNDM_any,90,786,0.11450381679389313
+Resistant,blaOXA48_any,41,786,0.05216284987277354
+Resistant,blaVIM_any,12,786,0.015267175572519083
+Susceptible,blaIMP_any,30,1658,0.018094089264173704
+Susceptible,blaKPC_any,27,1658,0.016284680337756333
+Susceptible,blaNDM_any,246,1658,0.14837153196622438
+Susceptible,blaOXA48_any,237,1658,0.14294330518697226
+Susceptible,blaVIM_any,8,1658,0.0048250904704463205

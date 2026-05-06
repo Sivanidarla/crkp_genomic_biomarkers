@@ -8,7 +8,7 @@ The study aimed to identify candidate genomic features associated with meropenem
 
 ---
 
-## Why This Project Matters
+## ## Relevance
 
 Carbapenem-resistant *K. pneumoniae* is a major global health threat. Understanding how genomic features relate to resistance is important for improving surveillance, diagnostics, and treatment strategies.
 
@@ -32,7 +32,8 @@ This project goes beyond simple gene detection by:
 - Susceptible: 1,658  
 
 **Features:**
-- Binary AMR gene matrix (881 genes)  
+- Binary AMR gene matrix (881 genes)
+- Processed large intermediate files (e.g., full AMR gene tables) are not included due to size constraints. These can be regenerated using the provided scripts. 
 - Carbapenemase marker groups:
   - blaKPC  
   - blaNDM  
